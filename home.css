@@ -1,0 +1,95 @@
+html
+{
+    height: 100%;
+}
+
+body
+{
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+    background-color: #333;
+}
+
+#bg-img
+{
+    background-image: url("assets/img1080.jpg");
+    background-position: bottom;
+    background-size: cover;
+    -webkit-background-size: cover;
+    height: 100%;
+}
+
+#message
+{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    background-color: rgba(0,0,0,0.2);
+    backdrop-filter: blur(5px);
+}
+
+p
+{
+    font-family: 'Apple Chancery', cursive;
+    color: rgb(144, 144, 144);
+}
+
+@keyframes from_left
+{
+    from
+    {
+      margin-left: -50%;
+    }
+    to
+    {
+      margin-left: 0;
+    }
+}
+
+@keyframes fade_in
+{
+    0%
+    {
+        opacity: 0;
+    }
+    100%
+    {
+        opacity: 1;
+    }
+}
+  
+@keyframes from_right
+{
+    from
+    {
+      margin-right: -50%;
+    }
+    to
+    {
+      margin-right: 0;
+    }
+}
+
+#p-greet
+{
+    text-align: left;
+    font-size: 40px;
+    padding-left: 60px;
+    animation: from_left 2.5s ease;
+}
+
+#p-intro
+{
+    font-size: 70px;
+    animation: fade_in 2s ease;
+}
+
+#p-about
+{
+    text-align: right;
+    font-size: 30px;
+    padding-right: 60px;
+    animation: from_right 2.5s ease;
+}

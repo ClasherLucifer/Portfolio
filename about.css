@@ -1,0 +1,72 @@
+html
+{
+    height: 100%;
+}
+
+body
+{
+    margin: 0;
+    height: 100%;
+    overflow: visible;
+    background-color: #333;
+}
+
+#bg-img
+{
+    background-image: url("assets/handshake.jpg");
+    background-position: bottom;
+    background-size: cover;
+    -webkit-background-size: cover;
+    height: 100%;
+}
+
+#message
+{
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-color: rgba(0,0,0,0.2);
+    backdrop-filter: blur(4px);
+}
+
+p
+{
+    font-family: 'Apple Chancery', cursive;
+    font-size: 25px;
+    color: white;
+    padding-left: 70px;
+    align-items: center;
+}
+
+@keyframes fade_in
+{
+    0%
+    {
+        opacity: 0;
+    }
+    100%
+    {
+        opacity: 1;
+    }
+}
+
+p:not(#p-greet)
+{
+    animation: fade_in 3s ease;
+}
+
+#p-greet
+{
+    text-align: left;
+    font-size: 35px;
+}
+
+#intro
+{
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+    align-items: center;
+    padding: 0;
+}
